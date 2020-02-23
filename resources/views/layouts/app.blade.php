@@ -33,11 +33,21 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
+                    
 
                     <!-- Right Side Of Navbar -->
+                    <!-- Management Product -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{{ url('/product') }}" class="nav-link">Management Product</a>
+                        </li>
+                    </ul>
+                    <!-- Management Customer -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{{ url('/customer') }}" class="nav-link">Management Customer</a>
+                        </li>
+                    </ul>
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest

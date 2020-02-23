@@ -16,11 +16,11 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <!--@if (session('success'))
+                    @if (session('success'))
                         <div class="alert alert-success">
                             {!! session('success') !!}
                         </div> 
-                    @endif-->
+                    @endif
                     <table class="table table-hover table-bordered">
                         <thead>
                             <tr>
@@ -40,7 +40,7 @@
                             <tr>
                                 <!-- Menampilkan Value dari Title -->
                                 <td>{{ $product->title }}</td>
-                                <td>{{ str_limit($product->description, 50) }}</td>
+                                <td>{{ \illuminate\Support\str::limit($product->description, 50) }}</td>
                                 <td>Rp {{ number_format($product->price) }}</td>
                                 <td>{{ $product->stock }}</td>
                                 <td>{{ $product->created_at->format('d-m-Y') }}</td>
